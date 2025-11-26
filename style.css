@@ -1,0 +1,36 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    text-decoration: solid ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: 300;
+    height: 20vh;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    text-decoration: solid ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: 300;
+    height: 20vh;
+}
+.lbutton{
+    height:60vh;
+    letter-spacing: 30vw;
+    background-color: aquamarine;
+}
+.btn1{
+    background-color: yellowgreen;
+    
+ 
+}
+#carte-jeu{
+    height: 60vh;
+    position:relative;
+}
