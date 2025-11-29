@@ -1,22 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Devine le Nombre</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        Bienvenue dans le jeu "Deviner le nombre"
-    </header>
+    <div class="container">
+        <div id="difficulty-screen" class="screen active">
+            <h1>Devine le Nombre</h1>
+            <p>Sélectionne un niveau de difficulté :</p>
+            <button class="difficulty-btn easy" >Facile (1-50)</button>
+            <button class="difficulty-btn medium" >Intermédiaire (1-100)</button>
+            <button class="difficulty-btn hard">Difficile (1-200)</button>
+        </div>
 
-    <div class="lboutton">
-        <button class="btn1">Clique ici pour jouer</button>
-        <button class="btn2">une explication du jeux</button>
+        <div id="game-screen" class="screen">
+            <h1>Devine le Nombre</h1>
+            <div class="game-info">
+                <div class="timer">Temps: <span id="time">0</span>s</div>
+                <div class="attempts">Essais: <span id="attempts">0</span></div>
+            </div>
+            <div class="range" id="range">Entre 1 et 50</div>
+            
+            <div class="input-container">
+                <input type="number" id="guess-input" placeholder="Entre ton nombre" min="1">
+                <button id="guess-btn">Deviner</button>
+            </div>
+            
+            <div class="reponse" id="reponse"></div>
+            <div class="hint" id="hint"></div>
+            
+            <button class="action-btn" id="restart-btn">Nouvelle partie</button>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h1>Félicitations !</h1>
+            <h2>Tu as trouvé le nombre !</h2>
+            <div class="result-time">Temps: <span id="final-time">0</span> secondes</div>
+            <div class="best-time" id="best-time"></div>
+            <button class="action-btn" id="play-again-btn">Rejouer</button>
+        </div>
     </div>
 
-    <footer>amuse-toi</footer>
+    <script src="script.js"defer></script>
 </body>
 </html>

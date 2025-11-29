@@ -1,36 +1,37 @@
-header{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #008080, #48cae4, #90e0ef,#48cae4,#008080);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
-    text-decoration: solid ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: larger;
-    font-weight: 300;
-    height: 20vh;
+    padding: 20px;
+    transition: background 0.5s ease;
 }
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: blue;
-    text-decoration: solid ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: larger;
-    font-weight: 300;
-    height: 20vh;
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
-.lbutton{
-    height:60vh;
-    letter-spacing: 30vw;
-    background-color: aquamarine;
+.container:hover {
+    transform: translateY(-5px);
+
 }
-.btn1{
-    background-color: yellowgreen;
-    
- 
-}
-#carte-jeu{
-    height: 60vh;
-    position:relative;
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
 }
