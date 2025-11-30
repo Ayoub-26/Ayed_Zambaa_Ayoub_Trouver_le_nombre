@@ -168,3 +168,37 @@ button:hover {
     color: #27ae60;
     margin: 15px 0;
 }
+.screen {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+@media (max-width: 600px) {
+.container {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.game-info {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-container {
+    flex-direction: column;
+}
+
+input, button {
+    border-radius: 10px;
+    width: 100%;
+}
+
+button {
+    margin-top: 10px;
+}
+}
